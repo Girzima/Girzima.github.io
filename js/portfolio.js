@@ -1,4 +1,4 @@
-<script>
+
 $(document).ready(function() {
 
 
@@ -17,4 +17,4 @@ $('#return-to-top').click(function() {
 
 
 });
-</script>
+
