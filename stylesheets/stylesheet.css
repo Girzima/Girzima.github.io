@@ -1,142 +1,93 @@
-body{
-background-color:#6b2e2e!important;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  background:#e6e6e6;
+  font-family: 'Muli', sans-serif;
+  text-align:center;
+}
+
+
+
+/*Nav start*/
+
+
 
 #nav {
   width:100%;
-  background-color:#333333;
-  position: fixed;
-  top:0!important;
-  margin:0;
-  padding:0;
-  z-index:5000;
-  border-bottom:1px solid white;
-}
-#nav .navwidth{
-  max-width:980px;
+  background: #80ffaa;
   margin:auto;
-  height:50px;
-  padding:0 10px;
-  color:white;
+  line-height:50px;
 }
-#nav .nav-left{
-  float:left;
-  font-size:45px;
-  font-family: 'Tangerine', cursive;
-  letter-spacing:2px;
-  top:5px;
-  position:relative;
-}
-#nav .nav-right{
-  float:right;
-  font-size:14px;
-  color:white;
-  position:relative;
-  top:20px;
-}
-
-#nav .nav-right li{
+#nav  li{
   display:inline-block;
 }
-#nav .nav-right li a{
+#nav li a{
+  color:black;
   padding:15px 10px;
   text-decoration:none!important;
-  color:white;
+  transition:0.5s;
 }
-#nav .nav-left a{
-  color:white;
-  text-decoration:none!important;
+#nav li a:hover{
+  font-size:20px;
+  font-weight:900;
 }
-/*NAV END INTRO START*/
 
-#intro{
-  width:100%;
-  margin-top:60px;
-  padding:30px 0;
-  color:white;
+
+
+
+/* nav end intro start*/
+
+
+
+#intro {
+  background: #80ffaa;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#intro .intro-main{
-  max-width:980px;
-  margin:30px auto 30px auto;
-}
-#intro .intro-main .intro-name{
-  width:70%;
+
+#intro .intro-text {
+  max-width: 980px;
   margin:auto;
-  text-align:center;
-}
-#intro h2{
-  font-size:60px;
-}
-#intro h3{
-  font-family: 'Tangerine', cursive;
-  font-size:45px;
-  margin-top:35px;
-  letter-spacing:2px;
+  padding:10px;
+  line-height: 40px;
 }
 
-/*INTRO END ABOUT ME START */
-#about{
-  width:100%;
-  padding-top: 70px; margin-top: -70px;
-}
 
-#aboutme{
+/*intro end about start*/
+
+
+.about-text{
   max-width:980px;
-  background-color:white!important;
-  border-radius:10px;
-  margin:0 auto;
-  overflow:hidden;
-  box-shadow:0 0 3px black;
+  margin:80px auto;
+  padding:0 10px;
 }
-#about-me{
-  max-width:650px;
-  margin:auto;
-  line-height:30px;
-  padding:20px;
+.about-text h1, .skills-text h1{
+  margin-bottom:30px;
 }
-#about-me a{
-  text-decoration:none;
-  font-size:18px;
-}
-#h21{/*about me*/
-  width:100%;
-  height:20px;
-  border-bottom:1px solid black;
-  text-align:center;
-  margin:25px 0 40px 0;
-}
-#h21 span, #h22 span{
-  font-size:30px;
-  background-color:white!important;
-  padding:0 15px;
-}
-#h22{/*Skills*/
-  width:100%;
-  height:20px;
-  border-bottom:1px solid black;
-  text-align:center;
-  margin:40px 0 40px 0;
-}
-#skillsp{
-  text-align:center;
+
+.skills-text{
+  max-width:980px;
+  padding:0 10px;
+  margin:0 auto 100px auto;
 }
 
 
 
-footer{
-  width:100%;
-  border-top:1px solid white;
-  background-color:#333333;
-  overflow:hidden;
-  margin-top:100px;
-  color:white;
-}
+/*intro end footer start*/
+
+
+
 #footer{
   max-width:980px;
   margin:auto;
-  padding-top:80px;
-  margin:-80px auto 0 auto;
 }
+
 #connect{
   width:40%;
   float:left;
@@ -144,33 +95,28 @@ footer{
 #contact{
   width:60%;
   float:left;
-  margin-bottom:30px;
+  margin-bottom:50px;
 }
-#footer section, #contact h3, #connect h3{
-  text-align:center;
+#contact h1{
+  padding-bottom:28px;
 }
-#footer hr{
-  border: 0;
-  clear:both;
-  display:block;              
-  background-color:white;
-  height: 1px;
-}
-#footer p{
-  margin-bottom:15px;
-}
-#connect{
+#connect h1{
   padding-bottom:10px;
-}
-#connect h4, #contact h4{
-  padding:10px;
 }
 #connect>div{
   width:200px;
   margin:18px auto;
 }
-#connect .btn{
+#connect button{
   width:100%;
+  padding:10px;
+  border-radius:10px;
+  border:none;
+  font-size:20px;
+}
+#connect button:hover{
+  box-shadow:0 0 5px black;
+  border:2px solid white; 
 }
 
 #codepen{
@@ -181,7 +127,8 @@ footer{
 }
 #github{
   background-color:lightgrey;
-  color:black;
+  border-radius:10px;
+  border:none;
 }
 #fcc{
   background-color:#006600;
@@ -189,22 +136,30 @@ footer{
   font-family: 'Lato', sans-serif;
 }
 #contact form{
-  border:1px solid white;
   width:80%;
   margin:auto;
-  border:none;
-  color:black!important;
 }
 #name, #email{
-  width:100%;
+  width:98%;
   height:35px;
   margin-bottom:15px;
   border-radius:8px;
+  border:none;
+  padding:2px 5px;
+  font-size:20px;
+  font-family: 'Muli', sans-serif;
 }
 #message{
-  width:100%;
+  width:98%;
   border-radius:8px;
   margin-bottom:8px;
+  border:none;
+  font-size:20px;
+  font-family: 'Muli', sans-serif;
+}
+#message:focus, #name:focus, #email:focus{
+  border:3px solid black;
+  outline:none;
 }
 #contact form>div{
   width:30%;
@@ -215,11 +170,29 @@ footer{
   width:100%;
   padding:5px;
   font-size:16px;
-  border:none;
+  border:3px solid white;
 }
-textarea {resize: none}
+#send:hover{
+  color:white;
+  background:black;
+}
+textarea {
+  resize: none;
+  font-size:15px;
+  padding:2px 5px;
+}
 
-/*return to top button*/
+#footer hr{
+  border: 0;
+  clear:both;
+  display:block;              
+  background-color:white;
+  height: 1px;
+}
+#footer section>p{
+  padding:20px 10px;
+}
+
 #return-to-top {
     box-shadow:0 0 3px black;
     position: fixed;
@@ -256,18 +229,6 @@ textarea {resize: none}
 
 
 
-
-
-
-
-
-
-@media (max-width:1000px){
-  #aboutme{
-    border-radius:0;
-  }
-}
-
 @media (max-width:700px){
   #connect, #contact{
     width:100%;
@@ -276,85 +237,6 @@ textarea {resize: none}
   #connect{
     overflow:hidden;
   }
-  #connect div{
-    width:50%;
-    float:left;
-    padding:0 30px;
-  }
-  #connect div:nth-child(4){
-    float:none;
-  }
-  #connect .btn{
-    width:100%;
- 
-  }
-}
 
-@media (max-width:545px){
-  #intro .intro-main .intro-name{
-    width:90%;
-  }
-  #connect div{
-    width:50%;
-    margin:15px auto;
-    float:none;
-    padding:0;
-  }
-  #connect .btn{
-    width:100%
-  }
-  #nav .navwidth{
-    height:110px;
-  }
-  #nav .nav-left{
-    float:none;
-    position:relative;
-    width:180px;
-    margin:auto;
-    top:10px;
-    text-align:center!important;
-    font-size:45px;
-  }
-  #nav .nav-right{
-    float:none;
-    text-align:center;
-    width:100%;
-    margin:auto;
-    top:8px;
-  }
-  #nav .nav-right ul{
-    padding:0;
-    margin:auto;
-  }
-  #intro{
-    margin-top:110px;
-  }
-  #intro .intro-main{
-    margin:20px auto;
-  }
-  #intro .intro-main .intro-name{
-    width:90%;
-    padding:0 20px;
-      }
-  #intro .intro-main .intro-name h2{
-    font-size:45px;
-  }
-  #intro h2{
-    font-size:40px;
-  }
-  #intro h3{
-    font-size:40px;
-  }
-  #about-me{
-    font-size:18px;
-  }
-  #footer{
-      padding-top:110px;
-  margin:-110px auto 0 auto;
-  }
-}
-@media (max-width:385px){
-  #fcc{
-    font-size:15px;
-  }
+
 }
