@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() >= 600) {        
+    if ($(this).scrollTop() >= 400) {        
         $('#return-to-top').fadeIn(200);   
     } else {
         $('#return-to-top').fadeOut(200);  
