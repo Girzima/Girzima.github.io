@@ -70,7 +70,9 @@ body {
 .about-text h1, .skills-text h1{
   margin-bottom:30px;
 }
-
+.about-text a{
+  text-decoration:none;
+}
 .skills-text{
   max-width:980px;
   padding:0 10px;
