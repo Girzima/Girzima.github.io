@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body {
+  background-color:#e6e6e6;
+  font-family: 'Muli', sans-serif;
+  text-align:center;
+}
+p{
+  opacity:0.8;
+}
+
+
+/*Nav start*/
+
+
+
+#nav {
+  width:100%;
+  background: #80ffaa;
+  margin:auto;
+  line-height:50px;
+}
+#nav  li{
+  display:inline-block;
+}
+#nav li a{
+  color:black;
+  padding:15px 10px;
+  text-decoration:none!important;
+  transition:0.5s;
+}
+#nav li a:hover{
+  font-size:20px;
+  font-weight:900;
+}
+
+
+
+
+/* nav end portfolio start*/
+#port{
+  background: #80ffaa;
+  width:100%;
+  overflow:hidden;
+}
+#portfolio {
+  max-width:980px;
+  margin:100px auto;
+  overflow:hidden;
+}
+#portfolio>div{
+  width:24.99%;
+  float:left;
+  font-size:0;
+}
+#portfolio img{
+  width:100%;
+  height:auto;
+  padding:5px;
+}
+
+/*portfolio end footer start*/
+
+
+#footer{
+  max-width:980px;
+  margin:60px auto 0 auto;
+}
+
+#connect{
+  width:40%;
+  float:left;
+}
+#contact{
+  width:60%;
+  float:left;
+  margin-bottom:50px;
+}
+#contact h1{
+  padding-bottom:28px;
+}
+#connect h1{
+  padding-bottom:10px;
+}
+#connect>div{
+  width:200px;
+  margin:18px auto;
+}
+#connect button{
+  width:100%;
+  padding:10px;
+  border-radius:10px;
+  border:none;
+  font-size:20px;
+}
+#connect button:hover{
+  box-shadow:0 0 5px black;
+  border:2px solid white; 
+}
+
+#codepen{
+  color:white;
+  background-color:black;
+  font-family: 'Cormorant Garamond', serif;
+  font-size:20px;
+}
+#codepen:hover, #fcc:hover{
+  background:white;
+  color:black;
+}
+#github{
+  background-color:lightgrey;
+  border-radius:10px;
+  border:none;
+}
+#github:hover{
+  background:white;
+}
+#fcc{
+  background-color:#006600;
+  color:white;
+  font-family: 'Lato', sans-serif;
+}
+#contact form{
+  width:80%;
+  margin:auto;
+}
+#name, #email{
+  width:98%;
+  height:35px;
+  margin-bottom:15px;
+  border-radius:8px;
+  border:1px solid grey;
+  padding:2px 5px;
+  font-size:20px;
+  font-family: 'Muli', sans-serif;
+}
+#message{
+  width:98%;
+  border-radius:8px;
+  margin-bottom:8px;
+  border:1px solid grey;
+  font-size:20px;
+  font-family: 'Muli', sans-serif;
+}
+#message:focus, #name:focus, #email:focus{
+  border:3px solid black;
+  outline:none;
+}
+#contact form>div{
+  width:30%;
+  margin:auto;
+}
+#send{
+  border-radius:8px;
+  width:100%;
+  padding:5px;
+  font-size:16px;
+  border:2px solid grey;
+  transition:0.3s;
+}
+#send:hover{
+  font-size:18px;
+  letter-spacing:2px;
+  font-weight:bold;
+  background:white;
+}
+textarea {
+  resize: none;
+  font-size:15px;
+  padding:2px 5px;
+}
+
+#footer hr{
+  border: 0;
+  clear:both;
+  display:block;              
+  background-color:white;
+  height: 1px;
+}
+#footer section>p{
+  padding:20px 10px;
+}
+
+#return-to-top {
+    position: fixed;
+    top:10px;
+    right:10px;
+    border:3px solid black;
+    background: #d9d9d9;
+    width: 55px;
+    height: 55px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+}
+#return-to-top i{
+    color: black;
+    margin: 0;
+    position: relative;
+    top:15px;
+    font-size: 19px;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background:white;
+}
+#return-to-top:hover i {
+    color: black;
+    top: 5px;
+}
+
+
+
+
+@media(max-width:900px){
+  #portfolio>div{
+    width:33.3333%;
+  }
+}
+
+@media (max-width:700px){
+  #connect, #contact{
+    width:100%;
+    float:none;
+  }
+  #connect{
+    overflow:hidden;
+  }
+}
+@media(max-width:600px){
+  #portfolio>div{
+    width:49.999%;
+  }
+}
+@media(max-width:400px){
+  #portfolio>div{
+    width:80%;
+    float:none;
+    margin:auto;
+  }
+}
