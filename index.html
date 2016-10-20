@@ -5,19 +5,26 @@
     <title>Girzima.GitHub.io by Girzima</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <script type="text/javascript" src="js/java"></script>
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+   <title>Girzima Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/portfolio.js"></script>
    
   </head>
   <body>
+<!--
+nav start
+-->
 <div id="nav">
-      <ul>
-        <li><a href="#">Home</a></li>|
-        <li><a href="Projects/">Projects</a></li>|
-        <li><a href="#footer">Contact</a></li>
-      </ul>
+  <ul>
+    <li><a href="https://girzima.github.io/">Home</a></li>|
+    <li><a href="Projects/">Projects</a></li>|
+    <li><a href="#footer">Contact</a></li>
+  </ul>
+
 </div>
 <div id="intro">
   <div class="intro-text">
@@ -25,45 +32,55 @@
     <p>I write code n stuff</p>
   </div>
 </div>
+<!--
+nav end | about start
+-->
 <div id="about">
   <div class="about-text">
     <h1>About</h1>
-    <p>Hi, I'm Chris. I'm a self taught front-end web designer with the aid of <a href="https://www.freecodecamp.com">FreeCodeCamp</a> and Google! I started learning early September, 2016. I enjoy writing code, creating things, solving problems, learning, and most of all, helping others. I aspire to turn my hobby into something more one day.</p>
+    <p>Hi, I'm Chris. I'm a self taught front-end web designer with the aid of <a href="#">FreeCodeCamp</a> and Google!. I started learning early September, 2016. I enjoy writing code, creating things, solving problems, learning, and most of all, helping
+      others. I aspire to turn my hobby into something more one day.</p>
   </div>
 </div>
+<!--
+about end | skills start
+-->
 <div id="skills">
   <div class="skills-text">
     <h1>Skills</h1>
     <p>HTML, CSS, basic knowledge of jQuery and currently learning JavaScript (lots of fun)</p>
   </div>
 </div>
-  <div id="footer">
-    <div id="contact">
-      <h1>Contact</h1>
-      <form action="https://formspree.io/crsmstokes2@gmail.com"
-      method="POST">
-        <input type="text" id="name" placeholder="  Name" name="name" required>
-        <input type="text" id="email" placeholder="  Email Address" name="replyto" required>
-        <textarea rows="2" type="text" id="message" placeholder=" Message - Currently hosted through formspree" required></textarea>
-        <div>
-          <input type="submit" id="send" value="Send">
-        </div>
-      </form>
-    </div>
-    <div id="connect">
-      <h1>Connect</h1>
-      <div><a href="#"><button id="github"><i class="fa fa-github" aria-hidden="true"> Github</i></button></a></div>
-      <div><a href="http://codepen.io/girzima/"><button id="codepen"><i class="fa fa-codepen" aria-hidden="true"> CodePen</i></button></a></div>
-      <div><a href="#"><button id="fcc"><i class="fa fa-headphones" aria-hidden="true"> freeCodeCamp</i></button></a></div>
-      
-    </div>
-    <section>
-      <hr>
-      <p>Written and coded by Chris Stokes</p>
-    </section>
+<!--
+skills end | footer start
+-->
+<div id="footer">
+  <div id="contact">
+    <h1>Contact</h1>
+    <form action="">
+      <input type="text" id="name" placeholder="  Name" required>
+      <input type="text" id="email" placeholder="  Email Address" required>
+      <textarea rows="2" type="text" id="message" placeholder=" Message" required></textarea>
+      <div>
+        <input type="submit" id="send" value="Send">
+      </div>
+    </form>
   </div>
+  <div id="connect">
+    <h1>Connect</h1>
+    <div><a href="https://github.com/Girzima"><button id="github"><i class="fa fa-github" aria-hidden="true"> Github</i></button></a></div>
+    <div><a href="http://codepen.io/girzima/"><button id="codepen"><i class="fa fa-codepen" aria-hidden="true"> CodePen</i></button></a></div>
+    <div><a href="https://www.freecodecamp.com/girzima"><button id="fcc"><i class="fa fa-headphones" aria-hidden="true"> freeCodeCamp</i></button></a></div>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/portfolio.js"></script><a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up" aria-hidden="false"></i></a>
+  </div>
+  <!--
+footer end | section start
+-->
+  <section>
+    <hr>
+    <p>Written and coded by Chris Stokes</p>
+  </section>
+</div>
+<a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up" aria-hidden="false"></i></a>
   </body>
 </html>
