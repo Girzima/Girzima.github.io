@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing:border-box;
 }
 
 body {
@@ -219,15 +220,15 @@ textarea {
     right:10px;
     border:3px solid black;
     background: #d9d9d9;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     display: block;
     text-decoration: none;
     border-radius: 35px;
     display: none;
     transition: all 0.3s ease;
 }
-#return-to-top i {
+#return-to-top i{
     color: black;
     margin: 0;
     position: relative;
