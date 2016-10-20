@@ -4,13 +4,11 @@
 }
 
 body {
-  background-color:#e6e6e6;
+  background:#e6e6e6;
   font-family: 'Muli', sans-serif;
   text-align:center;
 }
-p{
-  opacity:0.8;
-}
+
 
 
 /*Nav start*/
@@ -49,7 +47,7 @@ p{
   width: 100%;
   height: 60vh;
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
   align-items: center;
 }
 
@@ -72,9 +70,17 @@ p{
 .about-text h1, .skills-text h1{
   margin-bottom:30px;
 }
-.about-text a{
+#about a{
   text-decoration:none;
+  transition:0.5s;
 }
+#about a:hover{
+  font-size:20px;
+}
+
+
+/*about end skills start */
+
 .skills-text{
   max-width:980px;
   padding:0 10px;
@@ -83,7 +89,7 @@ p{
 
 
 
-/*intro end footer start*/
+/*skills end footer start*/
 
 
 
@@ -129,10 +135,17 @@ p{
   font-family: 'Cormorant Garamond', serif;
   font-size:20px;
 }
+#codepen:hover, #fcc:hover{
+  background:white;
+  color:black;
+}
 #github{
   background-color:lightgrey;
   border-radius:10px;
   border:none;
+}
+#github:hover{
+  background:white;
 }
 #fcc{
   background-color:#006600;
@@ -148,7 +161,7 @@ p{
   height:35px;
   margin-bottom:15px;
   border-radius:8px;
-  border:none;
+  border:1px solid grey;
   padding:2px 5px;
   font-size:20px;
   font-family: 'Muli', sans-serif;
@@ -157,7 +170,7 @@ p{
   width:98%;
   border-radius:8px;
   margin-bottom:8px;
-  border:none;
+  border:1px solid grey;
   font-size:20px;
   font-family: 'Muli', sans-serif;
 }
@@ -174,11 +187,14 @@ p{
   width:100%;
   padding:5px;
   font-size:16px;
-  border:3px solid white;
+  border:2px solid grey;
+  transition:0.3s;
 }
 #send:hover{
-  color:white;
-  background:black;
+  font-size:18px;
+  letter-spacing:2px;
+  font-weight:bold;
+  background:white;
 }
 textarea {
   resize: none;
@@ -196,7 +212,6 @@ textarea {
 #footer section>p{
   padding:20px 10px;
 }
-
 
 #return-to-top {
     position: fixed;
@@ -232,16 +247,10 @@ textarea {
 
 
 
-
-
-
 @media (max-width:700px){
   #connect, #contact{
     width:100%;
     float:none;
-  }
-  #connect{
-    overflow:hidden;
   }
 
 
